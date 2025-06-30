@@ -57,13 +57,8 @@ function loadContent(type, button) {
     const img = document.createElement('img');
     img.src = src;
     img.alt = "Portfolio work";
-    img.style.cssText = `
-      width: 311px;
-      height: 311px;
-      border-radius: 37px;
-      object-fit: cover;
-      margin: 5px;
-    `;
+    img.classList.add('works_section1');
+    
     
     img.onload = () => {
       container.appendChild(img);
