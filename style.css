@@ -6,18 +6,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Semi-Bold 
-.semibold-text {
-  font-weight: 600;
-}
-
-/* Bold 
-.bold-text {
-  font-weight: 700;
-}
-
-*/
-
 * {
   box-sizing: border-box;
   font-family: "Sora", sans-serif;
@@ -32,7 +20,6 @@ h3 {
 body {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
 }
 
 p {
@@ -152,41 +139,10 @@ h1 {
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 10px;
-  margin-bottom: 10px;
   display: flex;
   gap: 10px;
   flex-direction: row;
   text-align: center;
-}
-
-.exp_year:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
-}
-
-.exp_year:hover::before {
-  opacity: 1;
-  transform: rotate(-45deg) translateY(100%);
-}
-
-.proj_no:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(247, 254, 37, 0.5);
-}
-
-.proj_no:hover::before {
-  opacity: 1;
-  transform: rotate(-45deg) translateY(100%);
-}
-
-.client_no:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(232, 66, 221, 0.5);
-}
-
-.client_no:hover::before {
-  opacity: 1;
-  transform: rotate(-45deg) translateY(100%);
 }
 
 .exp_year {
@@ -255,7 +211,7 @@ h1 {
 .profile_image_section {
   height: 100%;
   display: flex;
-  flex-direction: rom;
+  flex-direction: row;
   border-radius: 12.977px;
   gap: 15px;
 }
@@ -320,9 +276,14 @@ h1 {
   width: 32px;
   height: 32px;
 }
+.mongodb {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
 
 .project_about_main {
-  height: 1624px;
+  height: auto;
   width: 100%;
   margin-top: 60px;
   display: flex;
@@ -334,62 +295,49 @@ h1 {
 .project_section {
   width: 100%;
   background-color: rgba(30, 27, 30, 0.5);
-
-  height: 670px;
   border-radius: 17.03px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 20px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
 }
 .about_section {
-  height: 750px;
+  height: auto;
   display: flex;
   border-radius: 17.03px;
-  gap: 80px;
+  gap: 20px;
   flex-direction: column;
 }
 .about_content {
-  height: 337px;
   width: 100%;
   background-color: rgba(30, 27, 30, 0.5);
   border-radius: 17.03px;
-  padding-left: 10px;
-  padding-top: 20px;
-  padding-right: 10px;
+  padding: 20px;
 }
 .service_section {
-  height: 363.89px;
   background-color: rgba(30, 27, 30, 0.5);
   border-radius: 17.03px;
-  padding-left: 10px;
-  padding-top: 20px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-content: centers;
   gap: 20px;
 }
 
 .Service_list {
   background-color: #000000;
   height: 60px;
-  width: 85%;
+  width: 100%;
   color: white;
   display: flex;
-  align-content: center;
-  justify-content: center;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   text-align: center;
   border-radius: 18px;
 }
 
 .project1 {
   background-color: black;
-  height: 230px;
+  height: auto;
   width: 100%;
-
   border-radius: 17.03px;
   margin-top: 15px;
   display: flex;
@@ -397,18 +345,16 @@ h1 {
   padding: 15px;
 }
 .project_name {
-  height: 20%;
+  margin-bottom: 10px;
 }
 .project_decription {
-  height: 60%;
-  padding: 10px;
+  margin-bottom: 15px;
 }
 
 .source {
-  height: 20%;
   display: flex;
-  justify-content: space-between; /* horizontal center */
-  align-items: center; /* vertical center */
+  justify-content: space-between;
+  align-items: center;
 }
 .source a {
   text-decoration: none;
@@ -433,7 +379,7 @@ h1 {
 }
 
 .works_buttons button {
-  width: 130.11px;
+  width: 153.11px;
   height: 33.173px;
   border-radius: 25.34px;
   background: #42394d;
@@ -449,53 +395,38 @@ h1 {
 }
 
 .works_buttons button:hover {
-  background-color: #8226fb; /* Hover color same as active */
+  background-color: #8226fb;
   color: rgb(66, 66, 66);
-
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
 }
 
 .works_buttons p {
   color: #fff;
-  font-size: 10.672px;
-  font-style: normal;
+  font-size: 12.672px;
   font-weight: 700;
-  line-height: 32.35px; /* 255.284% */
 }
 
 .featured_heading {
-  margin-top: 30px;
+  padding-top: 30px;
   margin-left: 10px;
 }
-
 .works {
   margin-top: 20px;
   width: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
   gap: 30px;
-
-  height: auto;
 }
 .works_section1 {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 10px;
-}
-
-.works_section1 img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 17.03px;
 }
 
 .contact_main {
@@ -516,216 +447,55 @@ h1 {
   gap: 30px;
   display: flex;
 }
-.Social_icons img {
-  width: 32px;
-  height: 32px;
-}
 
 .mail {
   margin-bottom: 30px;
 }
 
 a:hover {
-  background-color: rgb(0, 42, 15);
+  background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);
   border-radius: 50px;
 }
 
-/* Click (active) effect */
 svg {
   transition: transform 0.3s ease, fill 0.3s ease;
-  color: #333;
+  color: white;
 }
 
 svg:hover {
-  transform: scale(1.2) rotate(10deg);
-  color: #ff5733; /* Changes the fill if using currentColor */
+  transform: scale(1.1);
 }
-
-a:hover {
-  background-color: rgb(0, 42, 15);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transform: translateY(-2px);
-  border-radius: 50px;
-}
-
-/*for samll tablets*/
 
 @media screen and (min-width: 600px) {
-  .main-center-container {
-    width: 90%;
-    height: auto;
-  }
-
   .top-rectangle-section {
     height: 367px;
     gap: 15px;
     flex-direction: row;
   }
-  .intro_text_main {
-    height: 100%;
+  .project_about_main {
+    flex-direction: row;
+    gap: 20px;
   }
-  .profile_image_main {
-    height: 100%;
+  .project_section {
+    width: 52%;
   }
-  h1 {
-    font-size: 33px;
-  }
-
-  .experience_section {
-    margin-top: 30px;
+  .about_section {
+    width: 45%;
   }
   p {
     font-size: 1.7vw;
   }
-
-  .name h1 {
-    font-size: 28px;
-  }
-
-  .project_about_main {
-    height: 750px;
-    width: 100%;
-    margin-top: 60px;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
-
-  .project_section {
-    width: 52%;
-    height: 750px;
-    padding-left: 10px;
-    padding-top: 20px;
-    padding-right: 10px;
-    background-color: rgba(30, 27, 30, 0.5);
-  }
-
-  .about_section {
-    width: 45%;
-    height: 750px;
-    gap: 20px;
-  }
-  .about_content {
-    height: 394px;
-    background-color: rgba(30, 27, 30, 0.5);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-left: 10px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 10px;
-  }
-
-  .service_section {
-    background-color: rgba(30, 27, 30, 0.5);
-    height: 504px;
-  }
 }
-
-/*for tablets*/
-
-@media screen and (min-width: 760px) {
-  .main-center-container {
-    width: 90%;
-    height: auto;
-  }
-
-  .top-rectangle-section {
-    height: 367px;
-    gap: 15px;
-    flex-direction: row;
-  }
-  .intro_text_main {
-    height: 100%;
-  }
-  .profile_image_main {
-    height: 100%;
-  }
-  h1 {
-    font-size: 40px;
-  }
-
-  .name h1 {
-    font-size: 25px;
-  }
-  .project_about_main {
-    height: 905px;
-    width: 100%;
-    margin-top: 60px;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
-
-  .project_section {
-    background-color: rgba(30, 27, 30, 0.5);
-
-    width: 52%;
-    height: 750px;
-  }
-
-  .about_section {
-    width: 45%;
-    height: 750px;
-    gap: 20px;
-  }
-  .about_content {
-    height: 384px;
-    background-color: rgba(30, 27, 30, 0.5);
-    width: 100%;
-    display: flex;
-    padding-right: 10px;
-  }
-
-  .service_section {
-    background-color: rgba(30, 27, 30, 0.5);
-    height: 504px;
-  }
-  .works_buttons button {
-    width: 140.11px;
-  }
-}
-
-/* mobile screen optimisation*/
-
-@media screen and (max-width: 450px) {
-  .profile_image_section {
-    gap: 10px;
-  }
-  .profile_pic {
-    width: 222.801px;
-    height: 245.783px;
-  }
-
-  .social_section img {
-    width: 32px;
-    height: 32px;
-  }
-}
-
-/*laptops*/
 
 @media screen and (min-width: 1000px) {
   .main-center-container {
     width: 65.72%;
-    height: auto;
-    gap: 15px;
   }
-  .top-rectangle-section {
-    height: 367px;
-    flex-direction: row;
-  }
-  .intro_text_main {
-    height: 100%;
-  }
-  .profile_image_main {
-    height: 100%;
-  }
-  h1 {
-    font-size: 2rem;
+  .works_buttons button {
+    width: 224px;
+    height: 40px;
   }
   p {
     color: #fff;
@@ -734,181 +504,41 @@ a:hover {
     line-height: 27.249px; /* 160% */
     font-family: "Sora", sans-serif;
   }
-  .hireme {
-    width: 126.025px;
-    font-size: 17.03px;
-    height: 44.96px;
-  }
-
-  .exp_text {
-    font-size: 13px;
-  }
-  .exp_heading {
-    font-size: 35px;
-  }
-
-  .name h1 {
-    font-size: 30px;
-  }
-
-  .project_about_main {
-    height: 750px;
-    width: 100%;
-    margin-top: 60px;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
-
-  .project_section {
-    background-color: rgba(30, 27, 30, 0.5);
-    width: 55%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-left: 10px;
-  }
-
-  .about_section {
-    width: 50%;
-    height: 750px;
-    gap: 20px;
-  }
-  .about_content {
-    height: 384px;
-    background-color: rgba(30, 27, 30, 0.5);
-    width: 100%;
-    display: flex;
-    padding-right: 10px;
-  }
-
-  .service_section {
-    background-color: rgba(30, 27, 30, 0.5);
-    height: 504px;
-  }
-
-  .Service_list {
-    font-size: 18.843px;
-    font-style: normal;
-    font-weight: 700;
-  }
-
-  .works {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    justify-items: center;
-  }
-  .works_buttons {
-    justify-content: flex-start;
-    gap: 30px;
-    margin-top: 30px;
-    margin-left: 20px;
-  }
-
-  .works_buttons button {
-    width: 250px;
-    height: 40 px;
-  }
-
-  .works_buttons p {
-    color: #fff;
-    font-family: Sora;
-    font-size: 17.672px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32.35px; /* 255.284% */
-  }
-
-  .works_section1 img {
-    width: 311px;
-    height: 311px;
-    object-fit: cover;
-    border-radius: 17.03px;
-    padding: 10px;
-  }
-
-  .works {
-    margin-top: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    gap: 30px;
-
-    height: auto;
-  }
-  .works_section1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .Social_icons {
-    gap: 70px;
-    display: flex;
-  }
 }
 
-/* HTML: <div class="loader"></div> */
-
-b body {
-  background-color: black;
-  margin: 0;
-  padding: 0;
-  font-family: "Sora", sans-serif;
-  overflow-x: hidden;
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 4px solid rgba(130, 38, 251, 0.1);
+  border-left-color: #8226fb;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  display: none;
+  margin: 20px auto;
 }
 
-@keyframes l7 {
-  33% {
-    background-size: calc(100% / 3) 0%, calc(100% / 3) 100%, calc(100% / 3) 100%;
-  }
-  50% {
-    background-size: calc(100% / 3) 100%, calc(100% / 3) 0%, calc(100% / 3) 100%;
-  }
-  66% {
-    background-size: calc(100% / 3) 100%, calc(100% / 3) 100%, calc(100% / 3) 0%;
-  }
+@keyframes spin {
+  to { transform: rotate(360deg); }
 }
 
 .blur-gradient {
   width: 433px;
   height: 421px;
-  position: fixed; /* Changed from absolute to fixed for better floating effect */
-
+  position: fixed;
   border-radius: 433px;
   background: #9442ff;
   filter: blur(150px);
-  position: fixed;
   mix-blend-mode: screen;
   z-index: 0;
-}
-.blur-gradient {
   animation: float 50s ease-in-out infinite alternate;
 }
 
 @keyframes float {
-  0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(50vw, -30vh);
-  }
-  50% {
-    transform: translate(-40vw, 40vh);
-  }
-  75% {
-    transform: translate(60vw, 70vh);
-  }
-  100% {
-    transform: translate(-30vw, -60vh);
-  }
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(50vw, -30vh); }
+  50% { transform: translate(-40vw, 40vh); }
+  75% { transform: translate(60vw, 70vh); }
+  100% { transform: translate(-30vw, -60vh); }
 }
 
 .main-center-container,
@@ -917,5 +547,51 @@ b body {
 .featured_works_main,
 .contact_main {
   position: relative;
-  z-index: 2; /* Higher than the blur gradient */
+  z-index: 2;
+}
+
+.work-item {
+  position: relative;
+  width: 311px;
+  height: 311px;
+  margin: 5px;
+  border-radius: 37px;
+  overflow: hidden;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.portfolio-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.work-item:hover .portfolio-img {
+  transform: scale(1.1);
+}
+
+.visit-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(130, 38, 251, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: white;
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-decoration: none;
+  z-index: 5;
+}
+
+.work-item:hover .visit-overlay {
+  opacity: 1;
 }
